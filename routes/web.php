@@ -19,3 +19,6 @@ Route::get('/users', 'HomeController@users');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('isAdmin', 'auth')->namespace('admin')->group(function (){
+
+});
