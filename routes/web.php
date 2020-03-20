@@ -13,12 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::get('/users', 'HomeController@users');
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 Route::middleware('isAdmin', 'auth')->namespace('admin')->group(function (){
-
+    Route::get('/admin/users', 'UsersController@index')->name("admin.users");
+    Route::post('/admin/users/store', 'UsersController@store')->name("admin.users.store");
 });

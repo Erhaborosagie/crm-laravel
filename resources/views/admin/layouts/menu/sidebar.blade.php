@@ -2,8 +2,9 @@
     <div class="card">
         <div class="card-header">Dashboard</div>
         <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="{{route("home")}}">Dashboard</a></li>
+            <li class="list-group-item"><a href="{{route("admin.users")}}">Users</a></li>
             <li class="list-group-item"><a href="#">Leads</a></li>
-            <li class="list-group-item"><a href="#">People</a></li>
             <li class="list-group-item"><a href="#">Companies</a></li>
             <li class="list-group-item"><a href="#">Opportunities</a></li>
             <li class="list-group-item"><a href="#">Projects</a></li>

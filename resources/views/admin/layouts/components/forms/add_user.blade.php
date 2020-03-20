@@ -1,4 +1,4 @@
-<form method="POST" action="">
+<form method="POST" action="{{route(("admin.users.store"))}}" class="pt-2">
     @csrf
 
     <div class="form-group row">

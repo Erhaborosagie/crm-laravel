@@ -3,10 +3,15 @@
 @section("content")
 
     <div class="container-fluid">
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{session('success')}}
+            </div>
+        @endif
         <div class="row">
             @component("admin.layouts.menu.sidebar")
             @endcomponent
-            <div class="col-md-10">
+            <div class="col-md-10 pl-0">
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">

@@ -5,7 +5,7 @@
         <div class="row">
             @component("admin.layouts.menu.sidebar")
             @endcomponent
-            <div class="col-md-10">
+            <div class="col-md-10 pl-0">
                 <div class="card">
                     <div class="card-header">Dashboard</div>
                 </div>
