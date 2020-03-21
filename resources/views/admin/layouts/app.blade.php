@@ -75,6 +75,7 @@
     <main>
         @yield('content')
     </main>
+    @stack("admin.layouts.scripts.users")
 </div>
 </body>
 </html>
