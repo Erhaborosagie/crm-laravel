@@ -1,6 +1,9 @@
 <div class="col-md-2">
     <div class="card">
-        <div class="card-header">Dashboard</div>
+        <div class="card-header">
+            <img style="border-radius: 50px" src="https://via.placeholder.com/100" alt="John Doe">
+            <h5> John Doe</h5>
+        </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="{{route("home")}}">Dashboard</a></li>
             <li class="list-group-item"><a href="{{route("admin.users")}}">Users</a></li>

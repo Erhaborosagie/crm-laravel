@@ -73,7 +73,7 @@
         </div>
     </nav>
 
-    <main>
+    <main class="py-4">
         @yield('content')
     </main>
     @stack("admin.layouts.scripts.users")
