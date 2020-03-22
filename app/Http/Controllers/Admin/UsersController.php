@@ -15,6 +15,11 @@ class UsersController extends Controller
 
         return view("admin.users",["users"=>$users, "page"=>"Dashboard"]);
     }
+    public function show(Request $request, $id){
+        $user = User::findOrFail($id);
+
+        return view("admin.user",["user"=>$user, "page"=>"Dashboard"]);
+    }
 
     public function store(Request $request){
         $request->validate([

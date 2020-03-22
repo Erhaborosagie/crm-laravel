@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @stack("admin.layouts.styles")
 </head>
 <body>
 <div id="app">

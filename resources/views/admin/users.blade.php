@@ -51,6 +51,7 @@
                                     <td>{{$user->email}}</td>
                                     <td>{{$user->role}}</td>
                                     <td>
+                                        <a href="/admin/user/{{$user->id}}" class="btn btn-success">view</a>
                                         <a href="/admin/users/edit/{{$user->id}}" class="btn btn-success">edit</a>
                                         <a href="/admin/users/delete/{{$user->id}}" class="btn btn-danger">delete</a>
                                     </td>
